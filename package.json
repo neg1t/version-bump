@@ -9,7 +9,7 @@
   "license": "MIT",
   "devDependencies": {
     "gitlog": "^5.1.0",
-    "husky": "^9.1.7",
+    "husky": "^8.0.3",
     "jsonfile": "^6.2.0"
   }
 }
