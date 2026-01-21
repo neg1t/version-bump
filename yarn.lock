@@ -1467,6 +1467,11 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
+vite-plugin-version-mark@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-version-mark/-/vite-plugin-version-mark-0.2.2.tgz#5379ea64ecf67e917c7804d54c1322353bbb545e"
+  integrity sha512-qFxfnlpK++zBX7sWdOOmRFE+Yd7G/6vZ7mJFvlEhp/vLtqMU9cN0LWX+VcfVXubnyiGTpSzt/fzoejHRyTrbIQ==
+
 vite@^7.2.4:
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/vite/-/vite-7.3.1.tgz#7f6cfe8fb9074138605e822a75d9d30b814d6507"
