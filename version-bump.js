@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 
 const req = createRequire(import.meta.url);
 const jsonfile = req("jsonfile");
-import gitlog from "gitlog";
+const gitlog = req("gitlog");
 const KEY_WORD = "new version";
 
 console.log("start version bumping process...");
