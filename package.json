@@ -10,5 +10,11 @@
     "gitlog": "^5.1.0",
     "husky": "^8.0.3",
     "jsonfile": "^6.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged",
+      "pre-push": "node version-bump.js"
+    }
   }
 }
