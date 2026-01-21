@@ -1,9 +1,11 @@
 import { execSync } from "child_process";
-import gitlog from "gitlog";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
 import jsonfile from "jsonfile";
 import path from "path";
 import { fileURLToPath } from "url";
 
+const gitlog = require("gitlog");
 const KEY_WORD = "new version";
 
 console.log("start version bumping process...");
