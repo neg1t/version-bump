@@ -7,9 +7,9 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "gitlog": "^5.1.0",
+    "gitlog": "^4.0.8",
     "husky": "^8.0.3",
-    "jsonfile": "^6.2.0"
+    "jsonfile": "^6.1.0"
   },
   "husky": {
     "hooks": {
