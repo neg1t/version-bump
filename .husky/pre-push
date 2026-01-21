@@ -2,4 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo 'hello from pre-push hook'
-node version-bump.js
+node version-bump.cjs
