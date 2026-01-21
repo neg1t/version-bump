@@ -1,10 +1,10 @@
 import { execSync } from "child_process";
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
-import jsonfile from "jsonfile";
 import path from "path";
 import { fileURLToPath } from "url";
 
+const jsonfile = require("jsonfile");
 const gitlog = require("gitlog");
 const KEY_WORD = "new version";
 
