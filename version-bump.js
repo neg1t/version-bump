@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 const require = createRequire(import.meta.url);
 
 const jsonfile = require("jsonfile");
-const gitlog = require("gitlog");
+const { gitlog } = require("gitlog");
 
 const KEY_WORD = "new version";
 
