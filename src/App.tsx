@@ -10,6 +10,8 @@ function App() {
   // asd 2
   // asd 3
 
+  console.log("feat");
+
   return (
     <>
       <div>
