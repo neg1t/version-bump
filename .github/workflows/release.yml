@@ -29,10 +29,7 @@ jobs:
         with:
           node-version: "18"
 
-      # 3) Установить зависимости (если нужны)
-      - run: npm ci
-
-      # 4) Запустить semantic-release
+      # 3) Запустить semantic-release
       - name: Run semantic-release
         uses: codfish/semantic-release-action@v4
         with:
