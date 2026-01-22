@@ -1,6 +1,5 @@
 name: Release
 
-# Запускаем только при пуше в main
 on:
   push:
     branches:
@@ -12,32 +11,25 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      # Нужно дать права для пуша tag’ов
       contents: write
       id-token: write
 
     steps:
-      # 1) Checkout код
       - name: Checkout repository
         uses: actions/checkout@v5
         with:
           fetch-depth: 0 # обязательно, чтобы semantic-release видел историю git
 
-      # 2) Установить Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "18"
 
-      # 3) Запустить semantic-release
       - name: Run semantic-release
         uses: codfish/semantic-release-action@v4
         with:
-          # указываем, что релизы делаем только на main
           branches: |
             ["main"]
-          # формат tag’ов
           tag_format: "v${version}"
         env:
-          # стандартный токен GitHub
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
